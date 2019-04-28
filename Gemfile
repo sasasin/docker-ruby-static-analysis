@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem 'bundler-audit', '~> 0.4.0'
+gem 'bundler-audit', '~> 0.6.1'
 gem 'brakeman', '~> 4.5'
 gem 'rubocop', '~> 0.67.2'
 gem 'rubocop-performance', '~> 1.1'
