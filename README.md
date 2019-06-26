@@ -22,10 +22,30 @@ ex; CircleCI
 
 ```
 jobs:
-  build:
+  static-analysis:
     docker:
       - image: sasasin/docker-ruby-static-analysis:latest
     steps:
       - checkout
+      - run: mkdir -p tmp/{rubocop,brakeman,rubycritic}
       - run: bundle audit check --update || true
+      - run: bundle exec rubocop -c .rubocop.yml --parallel --format html -o tmp/rubocop/rubocop.html  || true
+      - run: bundle exec brakeman -A --no-exit-on-warn --no-exit-on-error -o tmp/brakeman/brakeman-report.html
+      - run:bundle exec rubycritic --no-browser --format html --path tmp/rubycritic app lib
+      - store_artifacts:
+          path: tmp
+
+workflows:
+  version: 2
+  nightly-workflow:
+    triggers:
+      - schedule:
+          # UTCで記述。下記は、02:00(JST)
+          cron: "00 17 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - static-analysis
 ```
