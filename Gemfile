@@ -6,7 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'bundler-audit', '~> 0.6.1'
 gem 'brakeman', '~> 4.5'
-gem 'rubocop', '~> 0.72.0'
+gem 'rubocop', '~> 0.76.0'
 gem 'rubocop-performance', '~> 1.1'
 gem 'rubycritic', '~> 4.1'
 

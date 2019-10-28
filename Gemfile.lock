@@ -34,8 +34,8 @@ GEM
     kwalify (0.7.2)
     launchy (2.4.3)
       addressable (~> 2.3)
-    parallel (1.17.0)
-    parser (2.6.3.0)
+    parallel (1.18.0)
+    parser (2.6.5.0)
       ast (~> 2.4.0)
     path_expander (1.0.4)
     psych (3.1.0)
@@ -47,7 +47,7 @@ GEM
       parser (>= 2.5.0.0, < 2.7, != 2.5.1.1)
       psych (~> 3.1.0)
       rainbow (>= 2.0, < 4.0)
-    rubocop (0.72.0)
+    rubocop (0.76.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -86,7 +86,7 @@ PLATFORMS
 DEPENDENCIES
   brakeman (~> 4.5)
   bundler-audit (~> 0.6.1)
-  rubocop (~> 0.72.0)
+  rubocop (~> 0.76.0)
   rubocop-performance (~> 1.1)
   rubycritic (~> 4.1)
 
