@@ -8,6 +8,6 @@ gem 'bundler-audit', '~> 0.6.1'
 gem 'brakeman', '~> 4.7'
 gem 'rubocop', '~> 0.78.0'
 gem 'rubocop-performance', '~> 1.5'
-gem 'rubycritic', '~> 4.1'
+gem 'rubycritic', '~> 4.4'
 
 
