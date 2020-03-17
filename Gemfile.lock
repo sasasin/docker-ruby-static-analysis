@@ -8,7 +8,7 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    brakeman (4.7.2)
+    brakeman (4.8.0)
     bundler-audit (0.6.1)
       bundler (>= 1.2.0, < 3)
       thor (~> 0.18)
@@ -90,7 +90,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  brakeman (~> 4.7)
+  brakeman (~> 4.8)
   bundler-audit (~> 0.6.1)
   rubocop (~> 0.79.0)
   rubocop-performance (~> 1.5)
