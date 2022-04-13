@@ -1,4 +1,4 @@
-FROM ruby:2.6.3
+FROM ruby:3.1.2
 ADD Gemfile .
 ADD Gemfile.lock .
 RUN bundle install
